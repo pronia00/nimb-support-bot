@@ -15,6 +15,7 @@ bot_token = os.getenv("TELEGRAM_TOKEN")
 if not bot_token:
     raise ValueError("TELEGRAM_TOKEN не найден. Убедитесь, что он указан в файле .env.")
 
+
 # Инициализация бота
 bot = Bot(
     token=bot_token,
