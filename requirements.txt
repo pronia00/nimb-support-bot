@@ -2,3 +2,4 @@ aiogram >= 3.10.0  # Используется для работы с Telegram AP
 requests >= 2.32.3  # Для выполнения HTTP-запросов
 jsonpickle >= 4.0.1 # Для сериализации данных (настройки модели)
 python-dotenv>=1.0.1
+yandex-cloud-ml-sdk >= 0.2.4

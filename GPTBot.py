@@ -7,14 +7,25 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.client.session.aiohttp import AiohttpSession
 from dotenv import load_dotenv  # Подключаем dotenv
 import os
+from yandex_cloud_ml_sdk import YCloudML
+from yandex_cloud_ml_sdk.auth import APIKeyAuth
 
 # Загрузка токена из .env
 load_dotenv()  # Загрузка переменных из файла .env
 bot_token = os.getenv("TELEGRAM_TOKEN")
+ygpt_api_key = os.getenv("APIKeyAuth")
 
 if not bot_token:
     raise ValueError("TELEGRAM_TOKEN не найден. Убедитесь, что он указан в файле .env.")
 
+if not ygpt_api_key:
+    raise ValueError("YandexGPT-APIKeyAuth не найден. Убедитесь, что он указан в файле .env.")
+
+# Инициализация Yandex Cloud ML SDK
+sdk = YCloudML(
+    folder_id="aje1cg8edv69esmdebn9",  # Замените на ваш folder_id
+    auth=APIKeyAuth(ygpt_api_key)
+)
 
 # Инициализация бота
 bot = Bot(

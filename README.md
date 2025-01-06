@@ -35,3 +35,9 @@ sudo systemctl enable bot.service
 sudo systemctl start bot.service
 ```
 4. Use bot :)
+
+notes: 
+команда запуска бота:
+```shell
+docker run -d --name nimb-gpt-bot --env-file .env --restart unless-stopped nimb-gpt-bot
+```
