@@ -1,5 +1,7 @@
 # YandexGPT Bot
 
+теперь это мой бот :))
+
 You can use this code to create a base for your telegram bot for ChatGPT or other AI model that answers with MarkDown formatting.
 This bot is working inside [Yandex Cloud](https://cloud.yandex.ru/en/) infrastructure and using YandexGPT API, but you can replace yandex-dependent code to yours. 
 
