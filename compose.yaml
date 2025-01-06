@@ -1,0 +1,13 @@
+services:
+  server:
+    build:
+      context: .
+    container_name: my_telegram_bot
+    env_file:
+      - .env
+    # Оставляем порты, только если действительно нужны:
+    ports:
+      - "8000:8000"
+    # Если в Dockerfile нет команды CMD ["python", "GPTBot.py"], 
+    # раскомментируйте команду ниже:
+    # command: python GPTBot.py
