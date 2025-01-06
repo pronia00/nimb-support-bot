@@ -1,4 +1,4 @@
-aiogram >= 3.17.0  # Используется для работы с Telegram API
+aiogram >= 3.10.0  # Используется для работы с Telegram API
 requests >= 2.32.3  # Для выполнения HTTP-запросов
 jsonpickle >= 4.0.1 # Для сериализации данных (настройки модели)
 python-dotenv>=1.0.1
